@@ -15,11 +15,12 @@ body{
 }
 .paddle{
     --position:50;
+    --height:10;
     position: absolute;
     background-color: var(--foreground-color);
     top:calc(var(--position)*1vh);
     transform:translateY(-50%);
-    height:10vh;
+    height:calc(var(--height)*1vh);
     width:1vh;
     border-radius:2vh;
 }
@@ -51,7 +52,7 @@ body{
     color:var(--foreground-color);
     flex-grow:1;
     flex-basis:0;
-    font-size:7vh;
+    font-size:4vh;
     padding:0 2vh;
     margin:1vh 0;
     opacity:0.5;
