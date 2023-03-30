@@ -20,7 +20,7 @@ export default class Paddle{
         return this.paddleElem.getBoundingClientRect();
     }
     get height(){
-        return parseFloat(getComputedStyle(this.paddleElem).getPropertyValue("--height"));
+        return parseInt(getComputedStyle(this.paddleElem).getPropertyValue("--height"));
     }
     set height(value){
         this.paddleElem.style.setProperty("--height",value);
